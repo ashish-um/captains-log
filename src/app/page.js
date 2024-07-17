@@ -7,7 +7,7 @@ export default async function page() {
   return (
     <div className="grid-cols-2 grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-screen-2xl mx-auto py-4">
       {data.map((item) => {
-        return <Car key={item.imdbID} data={item} />;
+        return <Card key={item.imdbID} data={item} />;
       })}
     </div>
   );
