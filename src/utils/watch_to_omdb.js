@@ -4,7 +4,7 @@ const OMDB_API = process.env.OMDB_API;
 export default async function WatchToOmdb() {
   return new Promise(async (resolve, _) => {
     const res = await fetch(
-      `ttps://api.watchmode.com/v1/list-titles/?apiKey=${WATCH_API}&source=all&sort_by=popularity_desc&page=1&limit=20`
+      `https://api.watchmode.com/v1/list-titles/?apiKey=${WATCH_API}&source=all&sort_by=popularity_desc&page=1&limit=20`
     );
 
     if (!res.ok) {
