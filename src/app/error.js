@@ -1,16 +1,14 @@
 "use client";
 import { useEffect } from "react";
+import Image from "next/image";
 
 export default function error({ error, reset }) {
-  useEffect(() => {
-    console.error(error);
-  }, [error]);
-
   return (
     <div className="text-center mt-32 mx-10">
-      <img
+      <Image
         className="mx-auto"
         width={100}
+        height={100}
         src="https://media.tenor.com/a7qa0Uk3F30AAAAi/peach-goma-peach-and-goma.gif"
       />
       <h2 className="text-xl font-bold text-red-400 my-4">
