@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "m.media-amazon.com",
         pathname: "**",
       },
+      {
+        protocol: "https",
+        hostname: "media.tenor.com",
+        pathname: "**",
+      },
     ],
   },
 };
