@@ -5,6 +5,7 @@ export default function Card({ data }) {
     <div>
       <Image
         src={data.Poster}
+        alt="poster"
         className="w-full h-full object-cover"
         width={500}
         height={675}

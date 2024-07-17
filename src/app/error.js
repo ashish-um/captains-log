@@ -9,6 +9,7 @@ export default function error({ error, reset }) {
         className="mx-auto"
         width={100}
         height={100}
+        alt="error img"
         src="https://media.tenor.com/a7qa0Uk3F30AAAAi/peach-goma-peach-and-goma.gif"
       />
       <h2 className="text-xl font-bold text-red-400 my-4">
