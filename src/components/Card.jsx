@@ -14,6 +14,7 @@ export default function Card({ data }) {
         className="w-full h-full object-cover"
         width={300}
         height={400}
+        priority={true}
       />
 
       <div className="absolute top-2 right-2 flex flex-col gap-1">
@@ -46,7 +47,10 @@ export default function Card({ data }) {
         )}
       </div>
 
-      <h3 className="text-lg font-bold inline lg:hidden absolute bottom-0 bg-slate-800 w-full p-1 text-nowrap overflow-scroll">
+      <h3
+        className="text-lg font-bold inline lg:hidden absolute bottom-0 bg-slate-800 w-full p-1 text-nowrap overflow-auto"
+        style={{ scrollbarWidth: "thin" }}
+      >
         {data.Title}
       </h3>
       <div className="opacity-0 inset-0 absolute lg:group-hover:opacity-100 transition-all pointer-events-none flex justify-center text-center items-center before:content-[''] before:bg-black before:block before:absolute before:inset-0 before:opacity-70 ">
