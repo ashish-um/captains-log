@@ -36,7 +36,7 @@ export default function Card({ data }) {
       <h3 className="text-lg font-bold inline lg:hidden absolute bottom-0 bg-slate-800 w-full p-1 text-nowrap overflow-scroll">
         {data.Title}
       </h3>
-      <div className="opacity-0 inset-0 absolute lg:group-hover:opacity-100 transition-all flex justify-center text-center items-center before:content-[''] before:bg-black before:block before:absolute before:inset-0 before:opacity-70 ">
+      <div className="opacity-0 inset-0 absolute lg:group-hover:opacity-100 transition-all pointer-events-none flex justify-center text-center items-center before:content-[''] before:bg-black before:block before:absolute before:inset-0 before:opacity-70 ">
         <div className="relative px-3">
           <h3 className="text-lg font-bold">{data.Title}</h3>
           <p>{data.Year}</p>

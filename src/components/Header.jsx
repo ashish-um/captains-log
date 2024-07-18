@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Header() {
   return (
-    <div className="flex justify-between my-4 max-w-screen-2xl mx-auto px-4 2xl:px-0">
+    <div className="flex justify-between my-4 max-w-screen-2xl mx-auto px-3">
       <Link
         className="flex gap-2 bg-emerald-500 px-3 py-2 rounded-md font-bold hover:bg-emerald-600"
         href={"/"}
