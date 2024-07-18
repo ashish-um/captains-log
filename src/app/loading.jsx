@@ -6,7 +6,7 @@ export default function loading() {
     <Image
       width={100}
       height={100}
-      src="spinner.svg"
+      src="/spinner.svg"
       className="mx-auto mt-20"
       alt="loading..."
     />

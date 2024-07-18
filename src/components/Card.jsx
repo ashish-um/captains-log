@@ -1,8 +1,12 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Card({ data }) {
   return (
-    <div className="group flex flex-col relative">
+    <Link
+      href={`/movie/${data.imdbID}`}
+      className="group flex flex-col relative"
+    >
       <Image
         src={data.Poster}
         alt="poster"
@@ -42,6 +46,6 @@ export default function Card({ data }) {
           <p>{data.Year}</p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
