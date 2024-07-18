@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import trending_down from "../../public/trending_down.svg";
 
 export default function Card({ data }) {
   return (
@@ -27,12 +28,20 @@ export default function Card({ data }) {
           <span
             className={`${
               Number(data.imdbRating) > 7 ? "bg-green-500" : "bg-red-700"
-            } px-2 py-0.5 rounded-md shadow-sm shadow-black text-sm sm:py-1 sm:text-lg flex items-center border-2`}
+            } px-2 py-0.5 rounded-md shadow-sm shadow-black text-sm sm:text-lg flex items-center border-2`}
           >
             {data.imdbRating}
-            <span className="material-symbols-rounded text-xs sm:text-base pl-2">
-              {Number(data.imdbRating) > 7 ? "trending_up" : "trending_down"}
-            </span>
+            <Image
+              width={20}
+              height={20}
+              className="ml-2"
+              alt="trending status"
+              src={
+                Number(data.imdbRating) > 7
+                  ? "/trending_up.svg"
+                  : "/trending_down.svg"
+              }
+            />
           </span>
         )}
       </div>
