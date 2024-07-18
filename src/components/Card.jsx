@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import trending_down from "../../public/trending_down.svg";
 
 export default function Card({ data }) {
   return (
@@ -14,7 +13,6 @@ export default function Card({ data }) {
         className="w-full h-full object-cover"
         width={300}
         height={400}
-        priority={true}
       />
 
       <div className="absolute top-2 right-2 flex flex-col gap-1">
