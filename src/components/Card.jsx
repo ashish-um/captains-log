@@ -12,8 +12,8 @@ export default function Card({ data }) {
         src={data.Poster}
         alt="poster"
         className="w-full h-full object-cover"
-        width={500}
-        height={675}
+        width={300}
+        height={400}
       />
 
       <div className="absolute top-2 right-2 flex flex-col gap-1 opacity-90">
