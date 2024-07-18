@@ -16,10 +16,10 @@ export default function Card({ data }) {
         height={400}
       />
 
-      <div className="absolute top-2 right-2 flex flex-col gap-1 opacity-90">
+      <div className="absolute top-2 right-2 flex flex-col gap-1">
         <span
           className={`uppercase ${
-            data.Type === "movie" ? "bg-blue-800" : "bg-amber-600"
+            data.Type === "movie" ? "bg-blue-800" : "bg-purple-700"
           } px-2 py-1 rounded-md shadow-sm shadow-black text-xs sm:text-lg font-semibold border-2`}
         >
           {data.Type}
@@ -27,8 +27,8 @@ export default function Card({ data }) {
         {data.imdbRating !== "N/A" && (
           <span
             className={`${
-              Number(data.imdbRating) > 7 ? "bg-green-500" : "bg-red-700"
-            } px-2 py-0.5 rounded-md shadow-sm shadow-black text-sm sm:text-lg flex items-center border-2`}
+              Number(data.imdbRating) > 7 ? "bg-green-700" : "bg-red-700"
+            } px-2 py-0.5 rounded-md shadow-sm shadow-black text-sm sm:text-lg flex items-center border-2 font-bold`}
           >
             {data.imdbRating}
             <Image
