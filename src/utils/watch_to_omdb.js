@@ -1,6 +1,5 @@
 const WATCH_API = process.env.WATCHMODE_API;
 const OMDB_API = process.env.OMDB_API;
-
 export default async function WatchToOmdb() {
   return new Promise(async (resolve, _) => {
     const res = await fetch(

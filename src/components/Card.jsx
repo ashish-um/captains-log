@@ -4,7 +4,7 @@ import Link from "next/link";
 export default function Card({ data }) {
   return (
     <Link
-      href={`/movie/${data.imdbID}`}
+      href={`/${data.Type}/${data.imdbID}`}
       className="group flex flex-col relative"
     >
       <Image

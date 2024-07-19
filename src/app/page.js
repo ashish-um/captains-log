@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default async function page() {
   const data = await WatchToOmdb();
-  console.log(data);
+
   return (
     <div className="max-w-screen-2xl mx-auto pb-4 px-3">
       <h2 className="text-xl sm:text-2xl mb-3 font-bold flex items-center">
