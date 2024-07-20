@@ -1,6 +1,4 @@
-const OMDB_API = process.env.OMDB_API;
 import getIframe from "@/utils/iframe_url";
-import Link from "next/link";
 
 export default async function page(movieID) {
   const id = movieID.params.id;
@@ -15,13 +13,13 @@ export default async function page(movieID) {
         style={{ height: "80svh" }}
       ></iframe>
       <center className="mt-2">
-        <Link
+        <a
           className="text-emerald-400 underline"
           href={embedURL}
           target="_blank"
         >
-          if it doesn't work click here
-        </Link>
+          if it doesn&apos;t work click here
+        </a>
       </center>
     </div>
   );
