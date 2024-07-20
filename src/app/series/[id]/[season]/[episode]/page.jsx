@@ -1,8 +1,10 @@
 import getIframe from "@/utils/iframe_url";
 
-export default async function page(movieID) {
-  const id = movieID.params.id;
-  const embedURL = await getIframe(id);
+export default async function page(routes) {
+  const id = routes.params.id;
+  const episode = routes.params.episode;
+  const season = routes.params.season;
+  const embedURL = await getIframe(id, season, episode);
 
   return (
     <div>

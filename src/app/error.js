@@ -13,6 +13,7 @@ export default function Error({ error, reset }) {
         className="mx-auto"
         width={100}
         alt="error image"
+        unoptimized
         height={100}
         src="https://media.tenor.com/a7qa0Uk3F30AAAAi/peach-goma-peach-and-goma.gif"
       />

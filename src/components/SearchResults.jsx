@@ -6,9 +6,14 @@ export default function SearchResults({ data, resetResults }) {
     <Link
       onClick={() => resetResults([])}
       href={`/${data.Type}/${data.imdbID}`}
-      className="flex p-2 [&:not(:last-child)]:border-b-2 border-white border-opacity-10"
+      className="flex p-2 [&:not(:last-child)]:border-b-2 border-white border-opacity-10 hover:bg-slate-600"
     >
-      <Image src={data.Poster} alt="poster" width={20} height={20} />
+      <Image
+        src={data.Poster === "N/A" ? "" : data.Poster}
+        alt="poster"
+        width={20}
+        height={20}
+      />
       <h2
         style={{ scrollbarWidth: "thin" }}
         className="overflow-x-scroll sm:overflow-hidden flex gap-1 text-nowrap mx-3 w-full text-sm sm:text-xl content-center"
