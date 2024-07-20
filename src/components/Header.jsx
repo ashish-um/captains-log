@@ -27,7 +27,6 @@ export default function Header() {
   const [resultLoading, setResultsLoading] = useState(false);
   const searchRef = useRef(null);
   useOutsideAlerter(searchRef, setResults);
-  const OMDB_API = "98d002bf";
 
   function useOutsideAlerter(ref) {
     useEffect(() => {
@@ -54,9 +53,7 @@ export default function Header() {
       try {
         setResultsLoading(true);
         setResults([]);
-        const response = await fetch(
-          `https://www.omdbapi.com/?s=${searchQuery}&apikey=${OMDB_API}`
-        );
+        const response = await fetch(`/api/search?q=${searchQuery}`);
         const searchData = await response.json();
         if (!searchData.Response !== "False") {
           console.log(searchData.Search);
