@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function SearchResults({ data, resetResults }) {
   return (
@@ -7,7 +8,7 @@ export default function SearchResults({ data, resetResults }) {
       href={`/${data.Type}/${data.imdbID}`}
       className="flex p-2 [&:not(:last-child)]:border-b-2 border-white border-opacity-10"
     >
-      <img src={data.Poster} width={20} height={20} />
+      <Image src={data.Poster} alt="poster" width={20} height={20} />
       <h2
         style={{ scrollbarWidth: "thin" }}
         className="overflow-x-scroll sm:overflow-hidden flex gap-1 text-nowrap mx-3 w-full text-sm sm:text-xl content-center"
