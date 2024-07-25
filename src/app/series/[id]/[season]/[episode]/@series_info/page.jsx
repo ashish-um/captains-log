@@ -22,7 +22,7 @@ export default async function page(routes) {
   return (
     <div
       style={{ maxHeight: "80svh", scrollbarWidth: "thin" }}
-      className="bg-slate-600 h-full p-2 overflow-y-scroll rounded-md lg:w-80"
+      className="bg-slate-600 h-full p-2 overflow-y-scroll rounded-md lg:w-80 pb-10 lg:pb-2"
     >
       <SeasonDropdown
         seasons={Number(data.totalSeasons)}

@@ -12,7 +12,7 @@ export default async function page(routes) {
         src={embedURL}
         allowFullScreen
         width={"100%"}
-        style={{ height: "80svh" }}
+        className="h-[40svh] lg:h-[80vh]"
       ></iframe>
     </div>
   );
