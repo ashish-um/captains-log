@@ -1,22 +1,7 @@
 
-# work in progress🚧
+# Captains Log 🏴‍☠️
+<strong>*WATCH*</strong> and _DISCOVER_ movies and series for free.
+> Site live at: <a href="https://captains-log-two.vercel.app/">captains-log-two.vercel.app &#8599;</a>
 
-> demo: https://captains-log-two.vercel.app/
 
-
-## Getting Started
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+![image](https://github.com/user-attachments/assets/b362f48b-8154-4719-9668-a265b524e6b7)
