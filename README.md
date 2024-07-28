@@ -42,6 +42,13 @@ To get a local copy up and running, follow these simple steps:
 
 ## Usage
 
+To configure .env: 
+
+> rename .env.example to .env
+
+> add your api keys: get [OMBI HERE](https://www.omdbapi.com/apikey.aspx) and [WATCHMODE HERE](https://api.watchmode.com/)
+
+
 To start the development server, run:
 
 ```sh
