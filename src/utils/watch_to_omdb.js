@@ -3,9 +3,9 @@ const OMDB_API = process.env.OMDB_API;
 export default async function WatchToOmdb() {
   return new Promise(async (resolve, _) => {
     const res = await fetch(
-      `https://api.watchmode.com/v1/list-titles/?apiKey=${WATCH_API}&source=all&sort_by=popularity_desc&page=1&limit=30`
+      `https://api.watchmode.com/v1/list-titles/?apiKey=${WATCH_API}&source=all&sort_by=popularity_desc&page=1&limit=60`, { cache: "no-cache" }
     );
-
+    
     if (!res.ok) {
       throw new Error("Failed to fetch trending data");
     }
