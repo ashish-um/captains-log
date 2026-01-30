@@ -2,6 +2,9 @@ import Card from "@/components/Card";
 import WatchToOmdb from "@/utils/watch_to_omdb";
 import Image from "next/image";
 
+// Force dynamic rendering to avoid static generation timeout
+export const dynamic = 'force-dynamic';
+
 export default async function page() {
   const data = await WatchToOmdb();
 
